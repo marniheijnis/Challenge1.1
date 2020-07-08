@@ -39,13 +39,33 @@ tr: nth-child(even) {
 	background-color: grey;
 }
 .button {
-	background-color: red;
-	border: none;
-	padding: 20px;
+	background-color: #CFB53B;
+	border: black;
+	padding: 10px;
 	text-align: center;
 	display: inline-block;
-	font-size: 20px;
+	font-size: 16px;
 	margin: 2px 4px;
 	cursor: pointer;
 	color: black;
 }
+#myProgress {
+  width: 75%;
+  background-color: grey;
+}
+
+#myBar {
+  width: 1%;
+  height: 30px;
+  background-color: #CFB53B;
+}
+#myHeart {
+  width: 75%;
+  background-color: grey;
+}
+
+#myLove{
+  width: 1%;
+  height: 30px;
+  background-color: red;
+  }

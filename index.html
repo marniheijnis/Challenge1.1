@@ -17,6 +17,43 @@
             function chocolateMode() {
               document.body.style.backgroundImage = "url('https://www.irishtimes.com/polopoly_fs/1.3676661.1540543932!/image/image.jpg_gen/derivatives/ratio_1x1_w1200/image.jpg')";
             }
+            var i = 0;
+function move() {
+  if (i == 0) {
+    i = 1;
+    var elem = document.getElementById("myBar");
+    var width = 1;
+    var id = setInterval(frame, 150);
+    function frame() {
+      if (width >= 100) {
+        clearInterval(id);
+        i = 0;
+      } else {
+        width++;
+        elem.style.width = width + "%";
+      }
+    }
+  }
+}
+
+            var i = 0;
+function love() {
+  if (i == 0) {
+    i = 1;
+    var elem = document.getElementById("myLove");
+    var width = 1;
+    var id = setInterval(frame, 150);
+    function frame() {
+      if (width >= 100) {
+        clearInterval(id);
+        i = 0;
+      } else {
+        width++;
+        elem.style.width = width + "%";
+      }
+    }
+  }
+}
         </script>
 
 		<h1>Interplanetary Transport System: Tracking progress of the journey</h1>
@@ -52,12 +89,24 @@
 			
 			
 		<div>
-            <button type="button" onclick="chocolateMode() ">Chocolate Mode</button>
-            <button type="button" onclick="normal() ">NORMAL</button>
-            <button onclick="alert('All the chocolate is eaten!')">Check Mars bars</button>
+            <button class="button" onclick="chocolateMode() ">Chocolate Mode</button>
+            <button class="button" onclick="normal() ">Normal mode</button>
+            <button class="button" onclick="alert('All the chocolate is eaten!')">Check Mars bars</button>
              </div>
-		
-	
+		<h2>Amount of fuel</h2>
+             <div id="myProgress">
+  <div id="myBar"></div>
+</div>
 
+<br>
+<button onclick="move()">Check</button> 
+
+<h2>Amount of love for chocolate</h2>
+             <div id="myHeart">
+  <div id="myLove"></div>
+</div>
+
+<br>
+<button onclick="love()">Check</button> 
 		</body>
 </html>
