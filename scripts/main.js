@@ -5,6 +5,7 @@ var shipSpace = {
 };
 
 document.getElementById("infoSpaceship").innerHTML = shipSpace.drink +' and '+ shipSpace.combustibles + ' ' +"are important, but they all love to eat chocolate Mars bars in space the most.";
+
 var i = 0;
 function move() {
   if (i == 0) {
@@ -23,6 +24,7 @@ function move() {
     }
   }
 }
+
 var i = 0;
 function love() {
   if (i == 0) {
@@ -42,9 +44,6 @@ function love() {
   }
 }
 
-
-
-
 function chocolateMode() {
   document.body.style.backgroundImage = "url('https://www.irishtimes.com/polopoly_fs/1.3676661.1540543932!/image/image.jpg_gen/derivatives/ratio_1x1_w1200/image.jpg')";
 
@@ -54,7 +53,7 @@ function normal() {
 
 
 
-
+}
 
 
 
