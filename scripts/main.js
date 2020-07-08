@@ -1,24 +1,18 @@
-var mySpaceship = {
-	
-	parameters: 'fuel',
-	environment: 'gravity',
-	metrics: 'gravity converter',
-	isInOrder: true,
+var spaceship, text, sLen, i;
+spaceship = ["Chocolate", "Water", "Fuel"];
+sLen = spaceship.length;
 
-	supplies1: {
-		water: 6,
-		food: 10,
-	},
-	supplies2: {
-		chocolate: 4,
-		cola: 25,
-	}
-};
+text = "<ul>";
+for (i = 0; i < sLen; i++) {
+  text += "<li>" + spaceship[i] + "</li>";
+}
+text += "</ul>";
 
 
-console.log(mySpaceship.fuel);
 
-console.log(mySpaceship.supplies1.chocolate);
+
+
+
 
 
 

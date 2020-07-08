@@ -1,8 +1,23 @@
+html {
+	background: url('https://wallpaperaccess.com/full/1745055.jpg') no-repeat center fixed;     
+    background-size: cover;
+}
 body {
-  background-color: lightblue;
-  font-family: 'Nanum Gothic', sans-serif;
-  color: #0a0a0a;
+	color: white;
 }
 h1 {
-	font-size: 16px;
+	font-family: 'Nanum Gothic', sans-serif;
+ 	font-size: 20px;
+	text-align: center;
+}
+h2 {
+	font-size: 12px;
+	text-align: center;
+}
+
+h3 {
+	font-size: 12px;
+}
+#table {
+	width: 200%;
 }
