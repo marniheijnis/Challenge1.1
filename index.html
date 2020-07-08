@@ -4,23 +4,39 @@
 		<meta charset="utf-8">
 		<title>Challenge 1</title>
 		<link rel="stylesheet" type="text/css" href="styles/mystyle.css">
+			<script src="scripts/main.js" defer></script>
 	</head>
 	<body>
+<script>
+            function normal() {
+              document.body.style.backgroundImage = "url('https://wallpaperaccess.com/full/1745055.jpg')";
+            }
+
+ 
+
+            function chocolateMode() {
+              document.body.style.backgroundImage = "url('https://www.irishtimes.com/polopoly_fs/1.3676661.1540543932!/image/image.jpg_gen/derivatives/ratio_1x1_w1200/image.jpg')";
+            }
+        </script>
+
 		<h1>Interplanetary Transport System: Tracking progress of the journey</h1>
-		<h2>Important to have enough chocolate, water and fuel.</h2>
+		<h3 id="infoSpaceship"></h3>
+
+		<h2>So, it is important to have enough chocolate, water and fuel.</h2>
 		
-		<h3>Is there enough on board?</h3>
+		<h3>Is there enough of it on board?</h3>
+
 		<div id="table">
 			<table>
 			<tr>
-				<th>Day 1</th>
-				<th>Day 15</th>
-				<th>Day 28</th>
+				<th>June</th>
+				<th>July</th>
+				<th>August</th>
 			</tr>
 			<tr>
-				<td>4500 chocolate bars</td>
-				<td>2500 chocolate bars</td>
-				<td>0 chocolate bars</td>
+				<td>4500 chocolate Mars bars</td>
+				<td>2500 chocolate Mars bars</td>
+				<td>0 chocolate Mars bars</td>
 			</tr>
 			<tr>
 				<td>38000 liter water</td>
@@ -33,13 +49,15 @@
 					<td>3459 liter fuel</td>
 				</tr>
 			</table>
-			</div>
-			<script src="scripts/main.js"></script>
-		</div>
-
+			
+			
+		<div>
+            <button type="button" onclick="chocolateMode() ">Chocolate Mode</button>
+            <button type="button" onclick="normal() ">NORMAL</button>
+            <button onclick="alert('All the chocolate is eaten!')">Check Mars bars</button>
+             </div>
+		
 	
-		
-		
-		
-	</body>
+
+		</body>
 </html>

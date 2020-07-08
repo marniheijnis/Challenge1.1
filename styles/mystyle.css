@@ -4,20 +4,48 @@ html {
 }
 body {
 	color: white;
+	font-family: 'Nanum Gothic', sans-serif;
+	height: 100vh;
+	width: 100%;
+
 }
 h1 {
-	font-family: 'Nanum Gothic', sans-serif;
- 	font-size: 20px;
+	font-size: 24px;
 	text-align: center;
 }
 h2 {
-	font-size: 12px;
+	font-size: 18px;
 	text-align: center;
 }
 
 h3 {
-	font-size: 12px;
+	font-size: 18px;
 }
-#table {
-	width: 200%;
+#infoSpaceship {
+	color: red;
+	text-align: center;
+}
+table {
+	border-collapse: collapse;
+	width: 100%;
+}
+
+td, th{
+	border: 1px;
+	text-align: left;
+	padding: 10px;
+}
+tr: nth-child(even) {
+	background-color: grey;
+}
+.button {
+	background-color: red;
+	border: none;
+	padding: 20px;
+	text-align: center;
+	display: inline-block;
+	font-size: 20px;
+	margin: 2px 4px;
+	cursor: pointer;
+	color: black;
 }
